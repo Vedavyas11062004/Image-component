@@ -1,0 +1,29 @@
+.heroImg {
+  width: 92%;
+}
+
+.home {
+  width: 100%;
+}
+
+.textContainer {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  margin-inline: auto;
+  padding-block: 4rem;
+}
+
+.textContainer > h2 {
+  font-size: 2.62rem;
+  letter-spacing: 0.02rem;
+  line-height: 3.2rem;
+  color: #004744;
+  font-weight: bold;
+}
+
+.textContainer > p{
+    font-size: 1rem;
+    line-height: 1.62rem;
+    padding-bottom: 0.5rem;
+    color: #5c5c5c;
+}
