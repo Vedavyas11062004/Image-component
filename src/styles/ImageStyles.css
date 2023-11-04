@@ -1,5 +1,6 @@
 .heroImg {
   width: 92%;
+  height: 40vh;
 }
 
 .home {
@@ -55,18 +56,13 @@
   width: 90%;
   grid-template-columns: 1fr 1fr 1fr;
   margin-inline: auto;
-  /* gap: 2rem; */
+  /* gap: 15rem; */
 }
 
 .card_img {
   width: 100%;
   height: 200px;
   position: relative;
-}
-
-.card_imgContainer:hover{
-  background-color: #b72abf;
-  opacity: .5;
 }
 
 .card {
@@ -134,6 +130,40 @@
 .third::after {
   display: none;
 }
+/* .first::after{
+  display: none;
+} */
+
+.card_imgContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.overlay {
+  width: 100%;
+  height: 200px;
+  top:0%;
+  left: 0%;
+  position: absolute;
+  background-color: rgba(183, 42, 191, 0);
+  z-index: 99;
+}
+
+.overlay:hover {
+  cursor: pointer;
+  background-color: rgba(183, 42, 191, 0.7); 
+}
+
+.play_btn{
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 100;
+}
 
 @media (max-width: 1021px) {
   .textContainer > h2 {
@@ -148,20 +178,31 @@
 
 @media (max-width: 750px) {
   .textContainer > h2 {
-    font-size: 2.05rem;
+    font-size: 1.5rem;
     letter-spacing: 0.02rem;
     line-height: 2.68rem;
     color: #004744;
     margin-bottom: 1.5rem;
   }
+  .textContainer{
+    width: 90%;
+    padding-block: 1rem;
+  }
+  .textContainer>p{
+    font-size: .75rem;
+    line-height: 1rem;
+  }
   .cards {
     grid-template-columns: 1fr;
+  }
+  .card{
+    padding-inline:0px;
   }
   .card::after {
     border-right: none;
     border-bottom: 1px solid rgba(92, 92, 92, 0.2);
-    width: 90%;
-    transform: translateX(-5%);
+    width: 100%;
+    /* transform: translateX(-10%) translateY(10%); */
   }
   .third::after {
     display: block;

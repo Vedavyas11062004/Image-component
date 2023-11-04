@@ -80,7 +80,7 @@ function Home() {
               heading={card.heading}
               tags={card.tags}
               url={card.url}
-              className={(index + 1) % val === 0 ? "third" : index + 1}
+              className={(index + 1) % val === 0 ? "third" : "first" }
             />
           ))}
         </div>
