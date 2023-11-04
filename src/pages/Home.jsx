@@ -66,7 +66,7 @@ function Home() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [window.innerWidth]);
+  });
 
   return (
     <div className="home">
