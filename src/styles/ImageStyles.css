@@ -165,6 +165,27 @@
   z-index: 100;
 }
 
+.btn_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-block: 2.5rem;
+}
+
+.btn_container>button{
+  border: 1px solid #b72abf;
+  color: #b72abf;
+  padding-inline:1rem;
+  padding-block: .5rem;
+  border-radius: .25rem;
+  font-weight: bold;
+}
+
+.btn_container>button:hover{
+  cursor: pointer;
+  background-color: #b72abf;
+  color: white;
+}
 @media (max-width: 1021px) {
   .textContainer > h2 {
     font-size: 2.62rem;

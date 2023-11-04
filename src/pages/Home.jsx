@@ -68,6 +68,52 @@ function Home() {
     };
   });
 
+  const handleClick = () => {
+    setData([
+      ...data,
+      {
+        heading: "Wasserstofhochlauf",
+        tags: ["ENERGIEWIRTSCHAFT", "INDUSTRIEPOLITIK", "REDEN", "20.10.2023"],
+        url: img1,
+      },
+      {
+        heading: "Bezahlbarer Strom",
+        tags: ["ENERGIEWIRTSCHAFT", "INDUSTRIEPOLITIK", "REDEN", "20.10.2023"],
+        url: img3,
+      },
+      {
+        heading: "Wasserstofhochlauf",
+        tags: [
+          "ALLGEMEIN",
+          "DUISBURG UND DAS RUHRGEBIET",
+          "ENERGIEWIRTSCHAFT",
+          "26.09.2023",
+        ],
+        url: cardImg,
+      },
+      {
+        heading: "Wasserstofhochlauf",
+        tags: [
+          "ALLGEMEIN",
+          "DUISBURG UND DAS RUHRGEBIET",
+          "ENERGIEWIRTSCHAFT",
+          "26.09.2023",
+        ],
+        url: img2,
+      },
+      {
+        heading: "Wasserstofhochlauf",
+        tags: ["ENERGIEWIRTSCHAFT", "INDUSTRIEPOLITIK", "REDEN", "20.10.2023"],
+        url: img1,
+      },
+      {
+        heading: "Wasserstofhochlauf",
+        tags: ["ENERGIEWIRTSCHAFT", "INDUSTRIEPOLITIK", "REDEN", "20.10.2023"],
+        url: img3,
+      },
+    ]);
+  };
+
   return (
     <div className="home">
       <ImageComponent image={Img} />
@@ -80,9 +126,12 @@ function Home() {
               heading={card.heading}
               tags={card.tags}
               url={card.url}
-              className={(index + 1) % val === 0 ? "third" : "first" }
+              className={(index + 1) % val === 0 ? "third" : "first"}
             />
           ))}
+        </div>
+        <div className="btn_container">
+          <button onClick={handleClick}>MEHR ANZEIGEN</button>
         </div>
       </div>
     </div>
