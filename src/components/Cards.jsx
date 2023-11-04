@@ -6,12 +6,14 @@ function Cards({ tags, heading, url, className }) {
   return (
     <div className={`card ${className}`}>
       <ul>
-        {tags.map((tag,index) => (
+        {tags.map((tag, index) => (
           <li key={index}>{tag}</li>
         ))}
       </ul>
       <h2>{heading}</h2>
-      <img src={url} alt="img.. "></img>
+      <div className="card_imgContainer">
+        <img src={url} alt="img.. " className="card_img"></img>
+      </div>
       <span className="span_nextPage">WEITERLESEN</span>
     </div>
   );

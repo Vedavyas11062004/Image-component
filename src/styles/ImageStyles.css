@@ -58,9 +58,15 @@
   /* gap: 2rem; */
 }
 
-.card > img {
+.card_img {
   width: 100%;
   height: 200px;
+  position: relative;
+}
+
+.card_imgContainer:hover{
+  background-color: #b72abf;
+  opacity: .5;
 }
 
 .card {
@@ -83,6 +89,14 @@
   border-right: 1px solid rgba(92, 92, 92, 0.2);
 }
 
+.card > h2 {
+  overflow: hidden;
+  font-family: Arial Bold, Helvetica Bold, sans-serif;
+  text-decoration: none;
+  color: #5c5c5c;
+  font-size: 1.1rem;
+}
+
 .card > ul {
   list-style: none;
   padding: 0%;
@@ -98,23 +112,23 @@
   display: inline-block;
   line-height: 1rem;
   text-transform: uppercase;
-  padding-inline:.25rem;
+  padding-inline: 0.25rem;
   position: relative;
 }
 
-.card > ul > li::after{
+.card > ul > li::after {
   content: "";
   position: absolute;
   top: 0%;
   right: 0%;
   width: 100%;
   height: 100%;
-  border-right: 1px solid #5c5c5c;;
+  border-right: 1px solid #5c5c5c;
 }
-.card > ul > li:last-child{
+.card > ul > li:last-child {
   color: #5c5c5c;
 }
-.card>ul>li:last-child::after{
+.card > ul > li:last-child::after {
   display: none;
 }
 .third::after {
