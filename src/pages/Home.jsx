@@ -127,6 +127,7 @@ function Home() {
               tags={card.tags}
               url={card.url}
               className={(index + 1) % val === 0 ? "third" : "first"}
+              animationDelay={(index + 1) * .25}
             />
           ))}
         </div>

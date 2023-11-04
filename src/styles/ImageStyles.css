@@ -71,6 +71,26 @@
   position: relative;
   padding-block: 1rem;
   margin-block: 1rem;
+  /* animation */
+  opacity: 0;
+  /* animation: fadeIn 2s ease-in-out; 
+  animation-fill-mode: forwards; */
+}
+
+.card.card-visible {
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .card::after {
@@ -229,3 +249,13 @@
     display: block;
   }
 }
+
+/* .card-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.card-animation.card-visible {
+  opacity: 1;
+  transform: translateY(0);
+} */
