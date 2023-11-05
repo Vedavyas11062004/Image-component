@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/ImageStyles.css";
 
 function ImageComponent({ image }) {
+  useEffect(() => {
+    const element = document.getElementById("textcontainer");
+    const element2 = document.getElementById("imageContent"); 
+    if (element) {
+      element.classList.add("text-visible");
+    }
+    if (element2) {
+      element2.classList.add("imgText-visible");
+    }
+  }, []);
   return (
     <div>
-      <img src={image} alt="img.." className="heroImg"></img>
-      <div className="textContainer">
+      <div className="image_container">
+        {/* <img src={image} alt="img.." className="heroImg"></img> */}
+        <div className="heroImg">
+          <div className="ImageContent" id="imageContent">
+            <h1>Industriepolitik</h1>
+            <p>KLIMANEUTRALITÄT BIS 2045</p>
+          </div>
+        </div>
+      </div>
+      <div className={`textContainer`} id="textcontainer">
         <h2>Klimaneutralität bis 2045</h2>
         <p>
           Im Ausschuss bin ich für meine Fraktion zuständig für Stahl, Chemie
@@ -25,3 +43,5 @@ function ImageComponent({ image }) {
 }
 
 export default ImageComponent;
+
+// className={`card ${className} ${isVisible? 'card-visible' : ""}`

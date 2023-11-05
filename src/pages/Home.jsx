@@ -3,7 +3,7 @@ import ImageComponent from "../components/ImageComponent";
 import img1 from "../assets/image-card-1.webp";
 import img2 from "../assets/image-card-2.webp";
 import img3 from "../assets/image-card-3.webp";
-import Img from "../assets/image.png";
+import Img from "../assets/main-Img.webp";
 import "../styles/ImageStyles.css";
 import Cards from "../components/Cards";
 import cardImg from "../assets/Image-card.webp";
